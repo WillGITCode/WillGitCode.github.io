@@ -8,41 +8,6 @@ body, html {
     color: #161105;
 }
 
-
-
-/*
-font-family: 'Fredoka One', cursive;
-font-family: 'Nunito', sans-serif;
-font-family: 'Montserrat', sans-serif;
-
-Potential Colors
-
-text #161105
-
-Base Color
-#ddae36
-
-Complimentary
-#7e36dd
-
-Analogous
-#ddd736
-#dd8436
-
-Split Complimentary
-#d236dd
-#364cdd
-
-Triadic
-#dd3695
-#36ddc7
-
-Tetdradic
-#7e36dd
-#dd3695
-#95dd36
-*/
-
 *{
     margin: none;
     padding: none;
@@ -111,8 +76,12 @@ h2, h3, h4, p{
     margin-top: 4%;
 }
 
-.active, .collapsible-button:hover {
+.collapsible-button:hover {
     background-color: #ddd736;
+}
+
+.active, .active:hover {
+  background-color: #ff5f40;
 }
 
 .form-content {
@@ -120,7 +89,7 @@ h2, h3, h4, p{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
-    background-color: #ff5f40;
+    background-color: #435d70;
 }
 
 #text-area{
@@ -135,6 +104,10 @@ h2, h3, h4, p{
     border: none;
     border-radius: 2px;
     box-sizing: border-box;
+}
+
+.contact-form-submit{
+  background-color: #ff5f40;
 }
 
 /*
@@ -184,24 +157,27 @@ h2, h3, h4, p{
 
 .yelpCamp{
     background-color: #3665dd;
+    background: linear-gradient(-5deg, #3665dd, #3665ddcb);
 }
-
-
 
 .budget{
     background-color: #36ddae;
+    background: linear-gradient(-5deg, #36ddae, #36ddaecb);
 }
 
 .simon{
     background-color: #7e36dd;
+    background: linear-gradient(-5deg, #7e36dd, #7e36ddc7);
 }
 
 .color-game{
     background-color: #dd3695;
+    background: linear-gradient(-5deg, #dd3695, #dd3695c5);
 }
 
 .about{
     background-color: #ddd736;
+    background: linear-gradient(-5deg, #ddd736, #ddd836c4);
     display: flex;
     padding: 5% 5% 5% 5%;
     flex-direction: column;
@@ -235,22 +211,8 @@ h2, h3, h4, p{
     align-content: center;
     text-align: center;
     background-color: #3665dd;
+    background: linear-gradient(-5deg, #3665dd, #3665ddc9);
     color: #161105;
-}
-
-.background {
-  position: absolute;
-  width: 70%;
-  height: 100%;
-  top: 0;
-  left: 30%;
-  margin: 0;
-  padding: 0;
-  background-image: url(assets/imgs/Tobias2.jpg);
-  background-size: cover;
-  background-repeat: round;
-  opacity: 0.2;
-  z-index: 0;
 }
 
 /*
@@ -308,11 +270,6 @@ h2, h3, h4, p{
     margin: 5%;
 }
 
-  .slideshow li {
-    width: 100%;
-    left: 0;
-  }
-
   .space{
     display: none;
   }
@@ -329,6 +286,7 @@ h2, h3, h4, p{
     width: 100%;
     height: 100%;
     background: #435d70;
+    background: linear-gradient(-5deg, #435d70, #435d70d7);
     overflow: hidden;
     z-index: -10;
   }
