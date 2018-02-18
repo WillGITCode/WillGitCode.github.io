@@ -273,53 +273,12 @@ h2, h3, h4, p{
   position: absolute;
   top: 0;
   left: 35%;
+  background-image: url(assets/imgs/Tobias1.jpg);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  opacity: 0;
+  opacity: 0.1;
   z-index: -5;
-  animation: imageAnimation 50s linear infinite;
-}
-
-.slideshow li:nth-child(1) {
-  background-image: url(assets/imgs/Lurm1.jpg)
-}
-
-.slideshow li:nth-child(2) {
-  background-image: url(assets/imgs/Tobias1.jpg);
-  animation-delay: 10s;
-}
-
-.slideshow li:nth-child(3) {
-  background-image: url(assets/imgs/Vincent1.jpg);
-  animation-delay: 20s;
-}
-
-.slideshow li:nth-child(4) {
-  background-image: url(assets/imgs/katie1.jpg);
-  animation-delay: 30s;
-}
-
-.slideshow li:nth-child(5) {
-  background-image: url(assets/imgs/joel-jasmin1.jpg);
-  animation-delay: 40s;
-}
-
-@keyframes imageAnimation {
-  0% {
-      opacity: 0;
-      animation-timing-function: ease-in;
-  }
-  10% {
-      opacity: 0.1;
-      animation-timing-function: ease-out;
-  }
-  20% {
-      opacity: 0.1;
-  }
-  30% {
-      opacity: 0;
-  }
 }
 
 /*
