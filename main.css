@@ -150,8 +150,14 @@ h2, h3, h4, p{
 
 .nav a{
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #161105;
+}
+
+.nav a:hover{
+  text-decoration: underline;
+  font-size: 1.1em;
+  color: #ddd736;
 }
 
 
@@ -532,13 +538,17 @@ h2, h3, h4, p{
     align-items: center;
 }
 
+.work-demo h3{
+  margin-top: 3.5%;
+}
+
 .work-demo-img-thumb{
-  width: 70%;
+  width: 50%;
 }
 
 .work-demo-img{
   width: 100%;
-  margin: 15% 0 8% 0;
+  margin: 2% 0 8% 0;
   border-radius: 2%; 
   box-shadow: 0 7px 28px rgba(92, 86, 86, 0.3), 0 4px 20px rgba(92, 86, 86, 0.3);
   -webkit-transform: scale(1.01);
@@ -563,6 +573,13 @@ h2, h3, h4, p{
     display: flex;
     align-items: center;
     justify-content: space-between
+}
+
+.feature-list{
+  align-self: flex-start;
+  list-style: square;
+  line-height: 1.3em;
+  padding-left: 2.2%;
 }
 
 .yelpCamp{
