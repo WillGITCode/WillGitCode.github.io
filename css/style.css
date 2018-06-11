@@ -1,0 +1,519 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+body{
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  background: #eee;
+  height: auto;
+}
+
+h1{
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2{
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin:0;
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+main{
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0,0,0,0.2),
+    -30px 0px 40px rgba(0,0,0,0.1);
+}
+
+#landing{
+  background: #fff;
+}
+
+#landing-text{
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#landing-text h2{
+  color: #888;
+}
+
+#landing-image{
+  background: url(https://source.unsplash.com/De8wMYoSSBc);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vh;
+  margin: 0;
+}
+
+.btn{
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  transition: background 500ms ease;
+}
+
+.btn:hover{
+  background:#f4f4f4;
+}
+
+#header{
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+#header h2{
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.caption{
+  padding: 0.8rem;
+  text-align: center;
+}
+
+/*	
+/* Skills 
+*/
+
+.skills-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  background: linear-gradient( #ffffff, #bbbbbb);
+}
+
+#left {
+width: 100%;
+align-self: center;
+}
+
+#right {
+width: 100%;
+align-self: center;
+}
+
+.skills-header h2 {
+font-size: 2em;
+letter-spacing: .4em;
+/* text-decoration: underline; */
+color: #333;
+text-align: center;
+}
+
+.skills-container h3 {
+font-size: 1.2em;
+color: #333;
+text-align: center;
+}
+
+.skills-bar-container {
+position: relative;
+width: 40%;
+min-width: 90%;
+margin: 5% auto;
+list-style: none;
+}
+
+.skills-bar-container li {
+background: transparent;
+position: relative;
+width: 100%;
+height: 10px;
+margin-bottom: 35px;
+margin-top: 8px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.skills-bar-container label {
+color: #333;
+position: relative;
+margin-left: 0px;
+font-size: 16px;
+font-weight: 300;
+}
+
+.progressbar {
+position: absolute;
+width: 0%;
+height: 100%;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-animation-duration: 2s;
+animation-duration: 2s;
+-webkit-animation-timing-function: ease-out;
+animation-timing-function: ease-out;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+
+#progress-htmlcss {
+-webkit-animation-name: progress-htmlcss;
+animation-name: progress-htmlcss;
+-webkit-animation-delay: .7s;
+animation-delay: .7s;
+}
+
+#progress-js-es6 {
+-webkit-animation-name: progress-js-es6;
+animation-name: progress-js-es6;
+-webkit-animation-delay: 1.4s;
+animation-delay: 1.4s;
+}
+
+#progress-react-jsx {
+-webkit-animation-name: progress-react-jsx;
+animation-name: progress-react-jsx;
+-webkit-animation-delay: 2.1s;
+animation-delay: 2.1s;
+}
+
+#progress-bootstrap {
+-webkit-animation-name: progress-bootstrap;
+animation-name: progress-bootstrap;
+-webkit-animation-delay: 2.8s;
+animation-delay: 2.8s;
+}
+
+#progress-node {
+-webkit-animation-name: progress-node;
+animation-name: progress-node;
+-webkit-animation-delay: .7s;
+animation-delay: .7s;
+}
+
+#progress-express {
+-webkit-animation-name: progress-express;
+animation-name: progress-express;
+-webkit-animation-delay: 1.4s;
+animation-delay: 1.4s;
+}
+
+#progress-mongo {
+-webkit-animation-name: progress-mongo;
+animation-name: progress-mongo;
+-webkit-animation-delay: 2.1s;
+animation-delay: 2.1s;
+}
+
+#progress-mongoose {
+-webkit-animation-name: progress-mongoose;
+animation-name: progress-mongoose;
+-webkit-animation-delay: 2.4s;
+animation-delay: 2.4s;
+}
+
+.progressblue {
+background-color: #ff5f40;
+}
+
+@-webkit-keyframes progress-htmlcss {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 80%;
+  }
+}
+
+@-webkit-keyframes progress-js-es6 {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 65%;
+  }
+}
+
+@-webkit-keyframes progress-react-jsx {
+0% {
+    width: 0%;
+}
+100% {
+    width: 30%;
+}
+}
+
+@-webkit-keyframes progress-bootstrap {
+0% {
+    width: 0%;
+}
+100% {
+    width: 40%;
+}
+}
+
+@-webkit-keyframes progress-node {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 40%;
+  }
+}
+
+@-webkit-keyframes progress-express {
+0% {
+    width: 0%;
+}
+100% {
+    width: 40%;
+}
+}
+
+@-webkit-keyframes progress-mongo {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 45%;
+  }
+}
+
+@-webkit-keyframes progress-mongoose {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 40%;
+  }
+}
+
+@-moz-keyframes progress-htmlcss {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 80%;
+  }
+}
+
+@-moz-keyframes progress-js-es6 {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 65%;
+  }
+}
+
+@-moz-keyframes progress-react-jsx {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 30%;
+  }
+}
+
+@-moz-keyframes progress-bootstrap {
+0% {
+    width: 0%;
+}
+100% {
+    width: 40%;
+}
+}
+
+@-moz-keyframes progress-node {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 40%;
+  }
+}
+
+@-moz-keyframes progress-express {
+0% {
+    width: 0%;
+}
+100% {
+    width: 40%;
+}
+}
+
+@-moz-keyframes progress-mongo {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 45%;
+  }
+}
+
+@-moz-keyframes progress-mongoose {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 40%;
+  }
+}
+
+@keyframes progress-htmlcss {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 80%;
+  }
+}
+
+@keyframes progress-js-es6 {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 65%;
+  }
+}
+
+@keyframes progress-react-jsx {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 30%;
+  }
+}
+
+@keyframes progress-bootstrap {
+0% {
+    width: 0%;
+}
+100% {
+    width: 40%;
+}
+}
+
+@keyframes progress-node {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 40%;
+  }
+}
+
+@keyframes progress-express {
+0% {
+    width: 0%;
+}
+100% {
+    width: 40%;
+}
+}
+
+@keyframes progress-mongo {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 45%;
+  }
+}
+
+@keyframes progress-mongoose {
+  0% {
+      width: 0%;
+  }
+  100% {
+      width: 40%;
+  }
+}
+
+
+/*--------------------------*/
+
+footer{
+  max-width: 900px;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+
+footer h3{
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.icons{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon{
+  color: #333;
+}
+
+.icon:hover{
+  color: rgb(104, 100, 129);
+}
+
+/* Media Queries */
+
+@media(min-width: 500px){
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text {
+    height: 100vh;
+  }
+
+  #landing-image{
+    height: 100vh;
+  }
+
+  #skills{
+    height: 90vh;
+  }
+
+  #left {
+    width: 50%;
+    }
+    
+    #right {
+    width: 50%;
+    
+    }
+}
+
+@media(min-width: 700px){
+  .btn{
+    padding: 1rem 3rem;
+  }
+}
