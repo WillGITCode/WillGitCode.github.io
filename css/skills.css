@@ -1,0 +1,71 @@
+#skills{
+  padding: 80px 15px;
+}
+
+#skills .title{
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills .title .triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 110px 165px 110px;
+  border-color: transparent transparent #ffe3a7 transparent;
+  position: absolute;
+  top: 0;
+}
+
+#skills .title h1{
+  position: relative;
+  left: 10px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #16171b;
+  z-index: 1;
+  letter-spacing: 20px;
+}
+
+
+#skills .skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-gap: 10px;
+}
+
+#skills .skills-container .skill-box{
+  background: black;
+  transition: all .4s ease-in-out;
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+
+}
+
+#skills .skills-container .skill-box:hover{
+  background: rgba(255, 255, 255,1);
+  -webkit-box-shadow: 0px 40px 75px 20px rgba(0,0,0,0.08);
+  -moz-box-shadow: 0px 40px 75px 20px rgba(0,0,0,0.08);
+  box-shadow: 0px 40px 75px 20px rgba(0,0,0,0.08);
+}
+
+#skills .skills-container .skill-box .skill-icon{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#skills .skills-container .skill-box .skill-icon .fa-html5{
+  color: #F16529;
+}

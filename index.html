@@ -1,343 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Montserrat|Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="assets/font-mfizz-2.4.1/font-mfizz.css">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="referrer" content="origin" />
-    <title>William Silburn</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <title>William Silburn</title>
 </head>
 <body>
-    
-<div class="main-side-bar">
-
-    <div class="space">
-        <div class="ship">
-            <div class="ship-rotate">
-            <div class="pod"></div>
-            <div class="fuselage"></div>
-            </div>
-        </div>
-        <div class="ship-shadow"></div>
-        <div class="mars">
-            <div class="tentacle"></div>
-            <div class="flag">
-            <div class="small-tentacle"></div>
-            </div>
-            <div class="planet">
-            <div class="surface"></div>
-            <div class="crater1"></div>
-            <div class="crater2"></div>
-            <div class="crater3"></div>
-            </div>
-        </div>
-        
+  <header>
+    <div class="logo">
+      <a href="index.html" class="logo-text">
+        WS
+      </a>
     </div>
-
-    <div class="main-side-bar-spacer">
-        <!--TODO: figure out a better way to fix this-->   
+    <div class="header-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#skills">Skills</a>
+      <!-- <a href="index.html#experience">Experience</a> -->
+      <a href="index.html#blog">Blog</a>
+      <a href="index.html#testimonials">Testimonials</a>
     </div>
-
-    <h1 class="main-side-bar-item">
-        Hi, I'm William :)
-        <br>
-        Developer
-        <br>
-        Problem Solver
-        <br>
-        & Father
-    </h1>
-
-    <p class="about-subtitle main-side-bar-item">
-        William Silburn is a Web Developer from Montréal building solutions and always looking to level up! 
-    </p>
-
-    <div class="side-bar-links-container main-side-bar-item">
-        <a class="sidebar-links" href="https://www.linkedin.com/in/william-silburn/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a class="sidebar-links" href="https://github.com/WillGITCode" target="_blank"><i class="fab fa-github-square fa-2x"></i></a>
-        <a class="sidebar-links" href="https://codepen.io/Wilhelmburn/" target="_blank"><i class="fab fa-codepen fa-2x"></i></a>
-        <a class="sidebar-links" href="https://www.freecodecamp.org/willgitcode" target="_blank"><i class="fab fa-free-code-camp fa-2x"></i></a>
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
     </div>
-    
-    <div class="contact-button-container main-side-bar-item">
-        <button class="collapsible-button">Get In Touch</button>
-        <div class="form-content">
-            <form id="contact" action="https://formspree.io/wsilburn@ymail.com" method="post">
-                <input class="contact-form-input" placeholder="Your name" type="text" name="name" tabindex="1" required autofocus>
-                <input class="contact-form-input" placeholder="Your Email Address" type="email" name="_replyto" tabindex="2" required>
-                <textarea class="contact-form-input" id="text-area" placeholder="Type your Message Here...." name="message" tabindex="5" required></textarea>
-                <input type="hidden" name="_cc" value="WilliamSilburnDeveloper@gmail.com" />
-                <input type="hidden" name="_next" value="https://willgitcode.github.io/" />
-                <button class="contact-form-input contact-form-submit" name="submit" type="submit" value="Send" id="contact-submit" data-submit="...Sending">Submit</button>
-            </form>
-        </div>
+  </header>
+  <div class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#portfolio">Portfolio</a>
+      <a href="index.html#skills">Skills</a>
+      <!-- <a href="index.html#experience">Experience</a> -->
+      <a href="index.html#blog">Blog</a>
+      <a href="index.html#testimonials">Testimonials</a>
+  </div>
+  <section id="top">
+    <div class="container">
+      <div class="info">
+        <div class="blue-square"></div>
+        <h1>William Silburn</h1>
+        <p>Web Developer</p>
+        <a href="#portfolio">Latest Works</a>
+      </div>
+      <div class="img">
+        <div class="background-img"></div>
+      </div>
     </div>
-</div>
-
-<div class="nav">
-    <a href="#skills">Skills</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#about">About</a>
-    <!-- <a href="#inspirations">Inspirations</a> -->
-</div>
-
-<div class="content-wrapper">
-
-    <div id="skills" class="skills-container">
-        <div class="skills-header">
-            <h2>Skills</h2>
-        </div>
-        
-        <div id="left">
-            <h3>Client Side</h3>
-            <ul class="skills-bar-container">
-            <label>HTML5 / CSS3</label>
-            <span class="percent"></span>
-            <li>
-                <span class="progressbar progressblue" id="progress-htmlcss"></span>
-            </li>
-        
-            <label>JavaScript / ES6</label>
-            <span class="percent"></span>
-            <li>
-                <span class="progressbar progressblue" id="progress-js-es6"></span>
-            </li>
-        
-            <label>React / JSX</label>
-            <span class="percent"></span>
-            <li>
-                <span class="progressbar progressblue" id="progress-react-jsx"></span>
-            </li>
-
-            <label>Bootstrap</label>
-            <span class="percent"></span>
-            <li>
-                <span class="progressbar progressblue" id="progress-bootstrap"></span>
-            </li>
-            </ul>
-        </div>
-        <div id="right">
-            <h3>Server Side</h3>
-            <ul class="skills-bar-container">
-            <label>Node</label>
-            <span class="percent"></span>
-            <li>
-                <span class="progressbar progressblue" id="progress-node"></span>
-            </li>
-        
-            <label>Express</label>
-            <span class="percent" id="angular-pourcent"></span>
-            <li>
-                <span class="progressbar progressblue" id="progress-express"></span>
-            </li>
-            
-            <label>MongoDB</label>
-            <span class="percent"></span>
-            <li>
-                <span class="progressbar progressblue" id="progress-mongo"></span>
-            </li>
-
-            <label>Mongoose</label>
-            <span class="percent"></span>
-            <li>
-                <span class="progressbar progressblue" id="progress-mongoose"></span>
-            </li>
-            </ul>
-        </div>
+  </section>
+  <section id="services">
+    <div class="container">
+        <div class="title">
+            <div class="circle">
+            </div>
+            <h1>services</h1>
+          </div>
+          <div class="services-container">
+            <div class="box blue">
+              <i class="fas fa-trophy"></i>
+              <h5>Responsive Website Design</h5>
+              <p>With the rise of smart phones and tablets, I build robust, mobile first websites and applications. Because your project should look beautifull on every device.</p>
+            </div>
+            <div class="box red">
+              <i class="fas fa-plane"></i>
+              <h5>Custon Web App Development</h5>
+              <p>Building applications that deliver on customer user stories, I love working on the buisness logic and intergrating it with the UI.</p>
+            </div>
+            <div class="box yellow">
+              <i class="fas fa-code"></i>
+              <h5>Quality Code</h5>
+              <p>Using up to date best practices I endever to write clean code for the people that will maintain my code into the future.</p>
+            </div>
+          </div>
     </div>
-
-    <div id="portfolio">
-
-        <div class="yelpCamp work-demo">  
-            <h3>Crypto Investment Tracker</h3>  
-            <a class="work-demo-img-thumb" href="https://crypto-price-checker.herokuapp.com/" target="_blank">
-                <img class="work-demo-img crypto-price-checker-image" src="assets/imgs/Crypto.jpg">
-            </a>
-            <div class="work-demo-items">
-                
-                <div class="work-demo-items-row">
-                    <p>
-                        Joe at <a class="portfolio-proj-link" href="https://www.youtube.com/channel/UC46wWUso9H5KPQcoL9iE3Ug/featured" target="blank">CodingPhase</a> inspired me to build this MVP.<br>
-                        It's a monitized microservice for those interested in Crypto currencies.
-                    </p>
-                </div>
-                <div class="work-demo-items-row">
-                    <ul class="feature-list">
-                        <li>
-                            User Sign-up and Login (not implimented)
-                        </li>
-                        <li>
-                            Check profit / loss of crypto investments 
-                        </li>
-                        <li>
-                            Save portfolio of tokens (not implimented)
-                        </li>
-                        <li>
-                            App feedback notifications
-                        </li>
-                        <li>
-                            Responsive Design
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  </section>
+  <section id="portfolio">
+    <div class="container">
+        <div class="title">
+            <div class="square"></div>
+            <h1>portfolio</h1>
         </div>
-
-
-        <div class="yelpCamp work-demo">  
-            <h3>YelpCamp</h3>  
-            <a class="work-demo-img-thumb" href="https://pacific-inlet-70276.herokuapp.com/" target="_blank">
-                <img class="work-demo-img YelpCamp-image" src="assets/imgs/YelpCamp.jpg">
-            </a>
-            <div class="work-demo-items">
-                <div class="work-demo-items-row">
-                    <p>While enroled in <a class="portfolio-proj-link" href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/overview" target="blank">The Web Developer Bootcamp</a>
-                        I built YelpCamp. I learned a ton during production and took pride in extending the features beyond initial deployment.
-                    </p>
+        <div class="portfolio-container">
+          <a href="#" class="box image1">
+            <div class="image">
+              <div class="hover-bg">
+                <div class="title">
+                  <div class="text">Ecommerce</div>
                 </div>
-                <div class="work-demo-items-row">
-                    <ul class="feature-list">
-                        <li>
-                            User / Admin Sign-up and Login
-                        </li>
-                        <li>
-                            Tiered permissions for posts, comments, and profiles
-                        </li>
-                        <li>
-                            CRUD functions for posts, comments, Google maps and users
-                        </li>
-                        <li>
-                            App feedback notifications
-                        </li>
-                        <li>
-                            Responsive Design
-                        </li>
-                    </ul>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="box image2">
+            <div class="image">
+              <div class="hover-bg">
+                <div class="title">
+                  <div class="text">Ecommerce</div>
                 </div>
+              </div>
             </div>
-        </div>
-
-        <div class="budget work-demo">
-            <h3>Personal Budget App</h3>
-            <a class="work-demo-img-thumb" href="https://codepen.io/Wilhelmburn/full/EQQNKJ/" target="_blank">
-                <img class="work-demo-img budget-image" src="assets/imgs/Budget.jpg">
-            </a>
-            <div class="work-demo-items">
-                <div class="work-demo-items-row">
-                    <p>
-                        Personal budget app for tracking monthly expenses.<br>
-                        Simple and elegent. Works like a todo app with more math:)
-                    </p>
+          </a>
+          <a href="#" class="box image3">
+            <div class="image">
+              <div class="hover-bg">
+                <div class="title">
+                  <div class="text">Ecommerce</div>
                 </div>
+              </div>
             </div>
-        </div>
-
-        <div class="simon work-demo">
-            <a class="work-demo-img-thumb" href="https://codepen.io/Wilhelmburn/full/MojLMa/" target="_blank">
-                <img class="work-demo-img simon-image" src="assets/imgs/Simon.jpg">
-            </a>
-            <div class="work-demo-items">
-                <h3>Classic Simon</h3>
-                <div class="work-demo-items-row">
-                    <p>
-                        This was a challenge from <a class="portfolio-proj-link" href="https://medium.freecodecamp.org/" target="blank">freeCodeCamp's</a> curriculum.<br>
-                        I was asked to recreat the classic handheld game Simon.
-                    </p>
+          </a>
+          <a href="#" class="box image4">
+            <div class="image">
+              <div class="hover-bg">
+                <div class="title">
+                  <div class="text">Ecommerce</div>
                 </div>
-                <div class="work-demo-items-row">
-                    <ul class="feature-list">
-                        <li>
-                            User must repeat after the computer to progress
-                        </li>
-                        <li>
-                            Twenty levels of increasing difficulty 
-                        </li>
-                        <li>
-                            User can toggle "Strict Mode" for harder diffuculty
-                        </li>
-                        <li>
-                            App feedback notifications
-                        </li>
-                    </ul>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="box image5">
+            <div class="image">
+              <div class="hover-bg">
+                <div class="title">
+                  <div class="text">Ecommerce</div>
                 </div>
+              </div>
             </div>
-        </div>
-
-        <div class="color-game work-demo">
-            <h3>The Great RBG Color Game</h3>
-            <a class="work-demo-img-thumb" href="https://codepen.io/Wilhelmburn/full/MQQbpz/" target="_blank">
-                <img class="work-demo-img color-game-image" src="assets/imgs/Color-Game.jpg">
-            </a>
-            <div class="work-demo-items">
-                <div class="work-demo-items-row">
-                    <p>
-                        A cute RGB color game where the user tests their eye.<br>
-                        You are presented with a grid of colors and a color code.<br>
-                        You get a few chances to guess the right color.<br>
-                        A nice tight feedback loop for user engagement.
-                    </p>
+          </a>
+          <a href="#" class="box image6">
+            <div class="image">
+              <div class="hover-bg">
+                <div class="title">
+                  <div class="text">Ecommerce</div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div> 
-    
-    <div id="about" class="about">
-        <div class="about-section-left">
-            <h3>FrontEnd Developer</h3>
-            <p>As a FrontEnd Dev I love to dive into the acronyms that might scare others away.
-                HTML5, CSS3, JavaScript, jQuery, NPM, SEO, GIT and more.
-                These are my tools to solve problems and get work done.
-                The only thing I find more enjoyable than the solutions us developers build and deliver, is the toys we get to play with.
-            </p>
-
-            <div class="icon-container">
-                <i class="fab fa-html5 fa-2x"></i>
-                <i class="fab fa-css3-alt fa-2x"></i>
-                <i class="fab fa-js-square fa-2x"></i>
-                <i class="icon-jquery fa-2x"></i>
-                <i class="icon-bootstrap fa-2x"></i>
+          </a>
+          <a href="#" class="box image7">
+            <div class="image">
+              <div class="hover-bg">
+                <div class="title">
+                  <div class="text">Ecommerce</div>
+                </div>
+              </div>
             </div>
-        </div>
-
-        <div class="about-section-right">
-            <h3>BackEnd Developer</h3>
-            <p>
-                Recently, I have been motivated to break behind the curtain and take the reigns from our database overlords.
-                I built a CRUD app some time ago just to see what it takes and I haven't looked back.
-            </p>
-
-            <p>
-                As my BackEnd skills continue to increase, so does my understanding of FrontEnd's strengths and limitations.
-                Every day the power of the web expands. The technologies and the methodologies that power the future are evolving and I will be right there.
-            </p>
-
-            <div class="icon-container">
-                <i class="fab fa-js-square fa-2x"></i>
-                <i class="fab fa-node-js fa-2x"></i>
-                <i class="icon-npm mfizz fa-2x"></i>
-                <i class="icon-mongodb fa-2x"></i>
-                <i class="icon-heroku fa-2x"></i>
-                <i class="fab fa-git fa-2x"></i>
-            </div>
+          </a>
         </div>
     </div>
-
-    <div id="inspirations">
-
+  </section>
+  <section id="skills">
+    <div class="container">
+      <div class="title">
+        <div class="triangle"></div>
+        <h1>skills</h1>
+      </div>
+      <div class="skills-container">
+        <div class="skill-box">
+          <div class="skill-icon">
+            <i class="fab fa-html5 fa-10x"></i>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt fa-10x"></i>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">
+            <i class="fab fa-js-square fa-10x"></i>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">
+            <i class="fab fa-react fa-10x"></i>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">
+            <i class="fab fa-node-js fa-10x"></i>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="footer">
-        <h4>
-            <i class="fab fa-creative-commons"></i>
-            2018 William Silburn. Made in Montréal</h4>
+  <!-- <section id="experience">
+    <div class="container">
+      <div class="large-title">
+        Experience
+      </div>
+      <div class="experience-container">
+        <div class="large-icons">
+          <div class="square">
+            <div class="blue-box">
+              Experience
+            </div>
+          </div>
+          <div class="circle">
+            <div class="yellow-box">
+              Awards
+            </div>
+          </div>
+          <div class="triangle">
+            <div class="red-box">
+              <div class="text">
+                Work
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-box">
+            <h4>Graphic Artist</h4>
+            <span class="date">June 2012 -  July 2013</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam molestias fugiat eveniet soluta architecto neque reiciendis a</p>
+          </div>
+          <div class="info-box">
+            <h4>Graphic Artist</h4>
+            <span class="date">June 2012 -  July 2013</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam molestias fugiat eveniet soluta architecto neque reiciendis a</p>
+          </div>
+        </div>
+      </div>
     </div>
-    
-</div>
+  </section> -->
 
-<script src="app.js"></script>
+  <section id="blog">
+    <div class="container">
+      <div class="title">
+        <h1>Blog</h1>
+      </div>
+      <div class="blog-container">
+        <!--post start-->
+        <a href="#" class="post">
+          <div class="post-img" style="background: url('https://jelvix.com/images/blog/5a186830155ab.jpg')"></div>
+          <div class="details">
+            <h4>Top 10 JavaScript Frameworks</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt, quia facilis nihil possimus similique, non obcaecati voluptatem labore modi totam esse ratione sit, eligendi optio libero tempore at quas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt, quia facilis nihil possimus similique, non obcaecati voluptatem labore modi totam esse ratione sit, eligendi optio libero tempore at quas.</p>
+          </div>
+          <div class="more">
+              <div class="button">
+                  Read More...
+              </div>
+            </div>
+        </a>
+        <!--post end-->
+        <a href="#" class="post">
+          <div class="post-img" style="background: url('https://jelvix.com/images/blog/5a186830155ab.jpg')"></div>
+          <div class="details">
+            <h4>Top 10 JavaScript Frameworks</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt, quia facilis nihil possimus similique, non obcaecati voluptatem labore modi totam esse ratione sit, eligendi optio libero tempore at quas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt, quia facilis nihil possimus similique, non obcaecati voluptatem labore modi totam esse ratione sit, eligendi optio libero tempore at quas.</p>
+          </div>
+          <div class="more">
+              <div class="button">
+                  Read More...
+              </div>
+            </div>
+        </a>
+        <!--post end-->
+        <a href="#" class="post">
+          <div class="post-img" style="background: url('https://jelvix.com/images/blog/5a186830155ab.jpg')"></div>
+          <div class="details">
+            <h4>Top 10 JavaScript Frameworks</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt, quia facilis nihil possimus similique, non obcaecati voluptatem labore modi totam esse ratione sit, eligendi optio libero tempore at quas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt, quia facilis nihil possimus similique, non obcaecati voluptatem labore modi totam esse ratione sit, eligendi optio libero tempore at quas.</p>
+          </div>
+          <div class="more">
+              <div class="button">
+                  Read More...
+              </div>
+            </div>
+        </a>
+        <!--post end-->
+        <a href="#" class="post">
+          <div class="post-img" style="background: url('https://jelvix.com/images/blog/5a186830155ab.jpg')"></div>
+          <div class="details">
+            <h4>Top 10 JavaScript Frameworks</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt, quia facilis nihil possimus similique, non obcaecati voluptatem labore modi totam esse ratione sit, eligendi optio libero tempore at quas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt, quia facilis nihil possimus similique, non obcaecati voluptatem labore modi totam esse ratione sit, eligendi optio libero tempore at quas.</p>
+          </div>
+          <div class="more">
+              <div class="button">
+                  Read More...
+              </div>
+            </div>
+        </a>
+        <!--post end-->
+        <a href="#" class="post">
+            <div class="post-img" style="background: url('https://jelvix.com/images/blog/5a186830155ab.jpg')"></div>
+            <div class="details">
+              <h4>Top 10 JavaScript Frameworks</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt, quia facilis nihil possimus similique, non obcaecati voluptatem labore modi totam esse ratione sit, eligendi optio libero tempore at quas.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt, quia facilis nihil possimus similique, non obcaecati voluptatem labore modi totam esse ratione sit, eligendi optio libero tempore at quas.</p>
+            </div>
+            <div class="more">
+                <div class="button">
+                    Read More...
+                </div>
+              </div>
+          </a>
+        <!--post end-->
+        <a href="#" class="post">
+          <div class="post-img" style="background: url('https://jelvix.com/images/blog/5a186830155ab.jpg')"></div>
+          <div class="details">
+            <h4>Top 10 JavaScript Frameworks</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt, quia facilis nihil possimus similique, non obcaecati voluptatem labore modi totam esse ratione sit, eligendi optio libero tempore at quas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt, quia facilis nihil possimus similique, non obcaecati voluptatem labore modi totam esse ratione sit, eligendi optio libero tempore at quas.</p>
+          </div>
+          <div class="more">
+              <div class="button">
+                  Read More...
+              </div>
+            </div>
+        </a>
+        <!--post end-->
+      </div>
+    </div>
+  </section>
+  <section id="testimonials">
+    <div class="container">
+      <div class="title">
+        <div class="square"></div>
+        <h1>Testimonials</h1>
+      </div>
+      <div class="testimonials-container">
+        <div class="test-sides test-left">
+          <div class="person-img" style="background: url('https://pbs.twimg.com/profile_images/1006244522332848145/k5DYj360.jpg');">
+            <div class="hover-bg">
+              <div class="name">James</div>
+            </div>
+          </div>
+        </div>
+        <div class="test-center">
+          <div class="header">
+            <div class="user-img" style="background: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=a72ca28288878f8404a795f39642a46f');"></div>
+            <div class="info">
+              <h4>Raul Rodriguez</h4>
+              <span>CEO, Nike</span>
+            </div>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui fugit ipsum velit provident atque nulla hic nobis. Amet, autem, necessitatibus sunt at impedit iste alias itaque, suscipit minima voluptatum architecto.</p>
+        </div>
+        <div class="test-sides test-right">
+            <div class="person-img" style="background: url('https://pbs.twimg.com/profile_images/1001159499133149184/mNHEcMbf.jpg');">
+            <div class="hover-bg">
+                <div class="name">Bryant</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="social-container">
+      <a href="http://www.facebook.com/">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="http://www.linkedin.com/">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="http://www.codepen.com/">
+        <i class="fab fa-codepen"></i>
+      </a>
+      <a href="http://www.twitter.com/">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <h5>William Silburn</h5>
+    <h6>Web Developer</h6>
+  </footer>
+  <script src="js/app.js"></script>
 </body>
 </html>

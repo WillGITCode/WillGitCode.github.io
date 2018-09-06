@@ -1,0 +1,205 @@
+#experience{
+  padding: 80px 15px;
+}
+
+#experience .large-title{
+  color: #c6e4ff;
+  font-weight: 900;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#experience .experience-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#experience .experience-container .large-icons .square{
+  display: inline-block;
+  border: 30px solid #52b8ff;
+  padding: 5px;
+  position: relative;
+  top: -68px;
+}
+
+#experience .experience-container .large-icons .circle{
+  display: inline-block;
+  border: 30px solid #ffc853;
+  padding: 5px;
+  border-radius: 50%;
+  position: relative;
+  top: 115px;
+  left: 50px;
+}
+
+#experience .experience-container .large-icons .triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 150px 230px 150px;
+  border-color: transparent transparent #ff5253 transparent;
+  position: relative;
+}
+
+#experience .experience-container .large-icons .square .blue-box{
+  width: 150px;
+  height: 150px;
+  background: #52b8ff;
+  padding: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+
+#experience .experience-container .large-icons .yellow-box{
+  color: #ffc853;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+#experience .experience-container .large-icons .triangle .red-box{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 93.75px 151.75px 93.75px;
+  border-color: transparent transparent #ffffff transparent;
+  position: absolute;
+  left: -94px;
+  top: 49px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ff5253;
+}
+
+#experience .experience-container .large-icons .triangle .red-box .text{
+  position: relative;
+  top: 98px;
+  left: -43px;
+}
+
+#experience .experience-container .info{
+  padding: 50px 0 0;
+}
+
+#experience .experience-container .info .info-box{
+  padding: 15px;
+}
+
+#experience .experience-container .info .info-box h4{
+  color: #16171c;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+#experience .experience-container .info .info-box .date{
+  color: #52b7ff;
+  font-size: .9rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 15px 0;
+  display: block;
+}
+
+#experience .experience-container .info .info-box p{
+  color: #b2b2b4;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 1px;
+  display: block;
+  line-height: 1.8;
+}
+
+/*Tablets*/
+@media only screen and (max-width: 960px){
+  #experience .experience-container .large-icons{
+    position: relative;
+    top: -25px;
+  }
+
+  #experience .experience-container .large-icons .square{
+    font-size: .8rem;
+    top: 92px;
+    left: 75px;
+  }
+
+  #experience .experience-container .large-icons .square .blue-box{
+    width: 130px;
+    height: 130px;
+  }
+
+  #experience .experience-container .large-icons .circle{
+    top: 96px;
+    left: 80px;
+  }
+
+  #experience .experience-container .large-icons .circle .yellow-box{
+    font-size: .9rem;
+    width: 130px;
+    height: 130px;
+  }
+
+  #experience .experience-container .large-icons .triangle{
+    width: 0;
+    height: 0;
+    font-size: 1rem;
+    border-style: solid;
+    border-width: 0 120px 208px 120px;
+    border-color: transparent transparent #ff5253 transparent;
+    top: 100px;
+    left: 60px;
+  }
+
+  #experience .experience-container .large-icons .triangle .red-box{
+    width: 0;
+    height: 0;
+    top: 40px;
+    left: -85px;
+    border-style: solid;
+    border-width: 0 85px 148px 85px;
+    border-color: transparent transparent #ffffff transparent;
+  }
+}
+
+/*Phones*/
+@media only screen and (max-width: 767px){
+  #experience .experience-container .large-icons{
+    display: none;
+  }
+
+  #experience .container .large-title{
+    font-size: 2.5rem;
+  }
+
+  #experience .experience-container{
+    grid-template-columns: 1fr;
+  }
+
+  #experience .experience-container .info .info-box h4{
+    font-size: 1rem;
+  }
+
+  #experience .experience-container .info .info-box p{
+    font-size: 1rem;
+  }
+}

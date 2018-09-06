@@ -1,0 +1,126 @@
+@import "css-reset.css";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,600i,700');
+@import "top-section.css";
+@import "services.css";
+@import "portfolio.css";
+@import "skills.css";
+/* @import "experience.css"; */
+@import "blog.css";
+@import "testimonials.css";
+@import "footer.css";
+
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between
+}
+
+header .logo{
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  background: black;
+  padding: 10px 15px;
+}
+
+header .logo .logo-text{
+  color: white;
+  text-decoration: none;
+}
+
+header .header-menu{
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-menu a{
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+}
+
+header .header-menu a:hover{
+  font-weight: 700;
+  color: #ff5253;
+}
+
+header .menu-btn{
+  color: #ff5253;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 1.8rem;
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu{
+  display: none;
+  background: white;
+  flex-direction: column;
+  padding: 40px 0;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  z-index: 10;
+  -webkit-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+  box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+  transform: translate3d(-100%, 0, 0);
+  transition: all .3s ease-in-out;
+}
+
+.mobile-menu.active{
+  transform: translate3d(0, 0, 0);
+}
+
+.mobile-menu a{
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-menu a:hover{
+  color: white;
+  background: #ff5253;
+}
+
+/*Tablets*/
+@media only screen and (max-width: 960px){
+  .container{ width: 100%; }
+
+  header .header-menu a{
+    font-size: .7rem;
+  }
+}
+
+/*Phones*/
+@media only screen and (max-width: 767px){
+  header .header-menu{
+    display: none;
+  }
+
+  header .menu-btn{
+    display: flex;
+  }
+
+  .mobile-menu{
+    display: flex;
+  }
+}
