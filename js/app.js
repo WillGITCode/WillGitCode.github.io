@@ -4,6 +4,6 @@ let clickedButton = function(){
   mobileMenu[0].classList.toggle('active')
 }
 
-
 menuButton[0].addEventListener('click', clickedButton)
+
 
